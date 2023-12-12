@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+   background-color: #121826;
+   background-image: url("./blur-radial.svg");
+   background-repeat: no-repeat;
+   background-position:800px 250px;
+}
+.card{
+    border: 1px solid #A1A1A9;
+    background-color:
+    #212936;
+    width: 450px;
+    border-radius: 10px;
+    
+}
+.container{
+    padding: 40px 40px;
+    color: #E5E7EB;
+    font-size: 1.25rem;
+}
+.name{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.name span{
+    color: #A1A1A9;
+    font-size: 0.75rem;
+}
+.name input{
+    border-radius: 10px;
+    padding: 10px;
+    background-color:  #212936;
+    border: 1px solid #A1A1A9;
+    color: #A1A1A9;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 10px;
+}
+.email span{
+    color: #A1A1A9;
+    font-size: 0.75rem;
+}
+.email input{
+    border-radius: 10px;
+    padding: 10px;
+    background-color:  #212936;
+    border: 1px solid #A1A1A9;
+    color: #A1A1A9;
+}
+.container > button{
+    cursor: pointer;
+   align-items: center;
+   background-color: #652CD1;
+   padding: 10px 30px;
+   border-radius: 20px;
+   border: none;
+   margin: 35px 120px 0px;
+   color: #E5E7EB;
+}
+.container > button:hover{
+    background-color: #7d4ed4;
+}
+.step{
+    gap: 20px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.step #step-page{
+    color: #394150;
+}
+.loading{
+    display: flex;
+
+}
+
+/* card 2 */
+.job{
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.job .interest{
+    border: 1px solid #A1A1A9;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: #A1A1A9;
+    background-color: #394150;
+    cursor: pointer;
+}
+.interest.selected{
+    background-color: #652CD1;
+    color: #E5E7EB;
+}
+/* Card 2 */
+.card{
+    display: none;
+}
+.card.active{
+    display: block;
+}
+
+/* last card  */
+.data1 {
+    margin: 15px 0px ;
+    
+}
+.data1 p{
+    font-size: 1rem;
+    padding-bottom: 10px;
+    color: #A1A1A9;
+}
+.topic {
+    font-size: 1rem;
+    color: #A1A1A9; 
+}
+.topic > li{
+    margin-top: 5px;
+    margin-left: 30px;
+    color: #E5E7EB;
+}
+.data-name , .data-email{
+    color: #E5E7EB;
+} 
+/* dot  */
+.loading{
+    gap: 10px;
+}
+.nav-dot{
+    width: 20px;
+    height: 20px;
+    /* color: wheat; */
+    border: none;
+    border-radius: 50%;
+    background-color:#394150;
+    
+}
+.nav-dot.active {
+    background-color: #652CD1;
+}
+.nav-dot.completed{
+    background-color: #652CD1;
+}
+/* mobile  */
+@media screen and (max-width: 640px){
+    .card {
+        width: 300px;
+    }
+    .container > button{
+        margin: 35px 50px 0px;
+    }
+    body{
+        background-position: 100px 250px;
+    }
+}
